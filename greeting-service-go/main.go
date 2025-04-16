@@ -68,4 +68,5 @@ func greet(w http.ResponseWriter, r *http.Request) {
 		name = "Stranger"
 	}
 	fmt.Fprintf(w, "Hello, %s!\n", name)
+	log.Println("incoming req")
 }
